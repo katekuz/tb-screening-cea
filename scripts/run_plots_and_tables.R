@@ -1,7 +1,7 @@
 # run_plots_and_tables.R — regenerate all figures and supplementary tables from output CSVs
-# Requires: output/csv/ populated by MasterTBModel.R + run_dsa.R + run_transmission.R + run_psa.R
+# Requires: output/csv/ populated by MasterTBModel.R (sources run_sa.R)
 # Usage:    Rscript scripts/run_plots_and_tables.R
-#           Or sourced by MasterTBModel.R / run_dsa.R / run_transmission.R
+#           Or sourced by MasterTBModel.R
 
 if (!file.exists("input/config.csv"))
   stop("Run from project root: Rscript scripts/run_plots_and_tables.R")

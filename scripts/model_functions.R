@@ -509,7 +509,7 @@ igra_spec_qft  <- as.numeric(config_list["igra_spec_qft"])        # QFT specific
 igra_spec_tspt <- as.numeric(config_list["igra_spec_tspt"])       # T-SPOT specificity: 0.93
 
 # IGRA uptake — base case proportion of LTBI-positive migrants accepting IGRA test.
-# Real-world: 60-80% (UKHSA 2024). Base case: 75% (midpoint). SA: 50-100% in run_dsa.R.
+# Real-world: 60-80% (UKHSA 2024). Base case: 75% (midpoint). SA: 50-100% in run_sa.R.
 igra_uptake_base <- as.numeric(config_list["igra_uptake_base"])   # 0.75
 
 # eff_active parameter names (for PSA sampling — all have beta distributions in config.csv)

@@ -1010,7 +1010,6 @@ cat("Saved: output/supplementary/ltbi_detection_gap_supplementary.tiff\n")
 
 # =============================================================================
 
-set.seed(2024)  # Fix PSA seed for reproducibility
 source("scripts/run_sa.R")
 # =============================================================================
 # PSA SUMMARY — EFFICIENT FRONTIER STRATEGIES

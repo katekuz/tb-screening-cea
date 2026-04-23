@@ -191,7 +191,7 @@ p_igra_spec <- ggplot(spec_df_plot,
 
 ggsave("output/supplementary/igra_specificity_supplementary.tiff", p_igra_spec,
        width = 11, height = 7, dpi = 300, compression = "lzw")
-cat("Saved: output/igra_specificity_sensitivity.png\n\n")
+cat("Saved: output/supplementary/igra_specificity_supplementary.tiff\n\n")
 
 cat("\n")
 cat("================================================================================\n")
@@ -628,7 +628,6 @@ p_prog_cost <- ggplot(prog_cost_plot_df, aes(x = prog_cost_pp, y = icer,
   ) +
   guides(colour = guide_legend(nrow = 2))
 
-# igra_programme_cost figure removed (session 56)
 
 cat("\n================================================================================\n")
 
