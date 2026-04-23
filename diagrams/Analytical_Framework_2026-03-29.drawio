@@ -1,0 +1,107 @@
+<mxfile host="Electron" modified="2026-03-30T00:00:00.000Z" agent="Claude Code" version="21.0.0" type="device">
+  <diagram id="analytical-framework" name="Analytical Framework">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- spacer top -->
+        <mxCell id="sp_top" value="" style="fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="233" y="30" width="5" height="5" as="geometry" />
+        </mxCell>
+
+        <!-- spacer left -->
+        <mxCell id="sp_left" value="" style="fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="500" width="5" height="5" as="geometry" />
+        </mxCell>
+
+        <!-- spacer right -->
+        <mxCell id="sp_right" value="" style="fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="820" y="500" width="5" height="5" as="geometry" />
+        </mxCell>
+
+        <!-- main column: x=173, w=480 (centre=413) -->
+
+        <!-- b1: y=70, h=90 -->
+        <mxCell id="b1" value="&lt;b&gt;Simulated UK migrant cohort (n = 100,000)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px'&gt;Age at entry: ~25 years · LTBI prevalence: 17.8% · Active TB prevalence: 1.0%&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f4f7;strokeColor=#00468b;fontSize=12;arcSize=25;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="173" y="70" width="480" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- b2: y=185 (gap 25); h=105 -->
+        <mxCell id="b2" value="&lt;b&gt;Stage 1: Decision tree — screening strategies&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;Comparator: passive case finding (current practice)&lt;br&gt;Active strategies (n = 42): 34 sequential · 8 parallel IGRA-based strategies&lt;br&gt;Initial screen: symptom screen · CXR&lt;br&gt;LTBI test: IGRA (QFT-Plus, T-SPOT.TB) · active TB confirmation: Xpert Ultra&lt;br&gt;Based on Zenner et al. (ERJ, 2025)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce8ee;strokeColor=#0099b4;fontSize=12;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="173" y="185" width="480" height="105" as="geometry" />
+        </mxCell>
+
+        <!-- b3: y=315 (gap 25); h=110 -->
+        <mxCell id="b3" value="&lt;b&gt;Screening outcome: cohort distributed into Markov starting states&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px'&gt;Active TB: detected → diagnosed (treatment initiated) · missed → undiagnosed (untreated)&lt;br&gt;LTBI: detected → diagnosed (treatment offered) · undetected (untreated)&lt;br&gt;Proportions in each state determined by strategy-specific test accuracy and uptake&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce8ee;strokeColor=#0099b4;fontSize=12;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="173" y="315" width="480" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- b4: y=450 (gap 25); h=100 -->
+        <mxCell id="b4" value="&lt;b&gt;Stage 2: Markov cohort model&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px'&gt;16 health states · 660 monthly cycles · 55-year lifetime horizon&lt;br&gt;3.5% annual discount rate · two-phase reactivation (yr 0–5 / yr 5–55)&lt;br&gt;Age-varying background mortality (ONS life tables; 5-year age bands)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0099b4;strokeColor=#00468b;fontSize=12;arcSize=15;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="173" y="450" width="480" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- b5: y=575 (gap 25); h=75 -->
+        <mxCell id="b5" value="&lt;b&gt;Outcomes per strategy (per cohort)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px'&gt;Discounted costs (2023/24 £) · discounted QALYs gained&lt;br&gt;LTBI cases detected · active TB reactivations averted · secondary TB cases prevented&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0099b4;strokeColor=#00468b;fontSize=12;arcSize=15;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="173" y="575" width="480" height="75" as="geometry" />
+        </mxCell>
+
+        <!-- btrans: y=675 (gap 25); h=90 -->
+        <mxCell id="btrans" value="&lt;b&gt;Secondary transmission prevention (societal perspective)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px'&gt;Each averted TB reactivation reduces onward transmission to contacts&lt;br&gt;Secondary active TB and LTBI cases prevented among contacts are valued at unit treatment costs&lt;br&gt;Downstream savings included under the societal perspective; excluded from the NHS perspective&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0099b4;strokeColor=#00468b;fontSize=12;arcSize=15;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="173" y="675" width="480" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- b6: y=790 (gap 25); h=95 -->
+        <mxCell id="b6" value="&lt;b&gt;Incremental cost-effectiveness analysis&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px'&gt;ICERs comparing each strategy to the next best on the efficient frontier&lt;br&gt;&lt;i&gt;Societal perspective (primary):&lt;/i&gt; incorporates secondary transmission prevention savings&lt;br&gt;&lt;i&gt;NHS perspective (robustness check):&lt;/i&gt; direct healthcare costs only; no secondary prevention savings&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0099b4;strokeColor=#00468b;fontSize=12;arcSize=15;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="173" y="790" width="480" height="95" as="geometry" />
+        </mxCell>
+
+        <!-- sa_box: y=910 (gap 25); h=40; w=600; x=113 (centre=413) -->
+        <mxCell id="sa_box" value="&lt;b&gt;Sensitivity analyses&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0099b4;strokeColor=#00468b;fontSize=12;arcSize=20;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="113" y="910" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e6sa" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00468b;strokeWidth=2;" edge="1" source="b6" target="sa_box" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- b7a: DSA left; x=24, w=375; y=995 (gap 45); h=105 -->
+        <mxCell id="b7a" value="&lt;b&gt;Deterministic SA (DSA)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;One parameter varied at a time across 95% plausible range&lt;br&gt;Parameters: IGRA specificity · IGRA uptake · LTBI prevalence&lt;br&gt;treatment completion · active TB prevalence · programme costs&lt;br&gt;Output: NMB tornado diagrams (3 frontier strategies) · frontier stability assessment&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce8ee;strokeColor=#00468b;fontSize=12;arcSize=20;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="24" y="995" width="375" height="105" as="geometry" />
+        </mxCell>
+
+        <!-- b7b: PSA right; x=426, w=375; y=995; h=90 -->
+        <mxCell id="b7b" value="&lt;b&gt;Probabilistic SA (PSA)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;1,000 simulations; all parameters varied simultaneously&lt;br&gt;Distributions: beta (probabilities/utilities) · gamma (costs)&lt;br&gt;Output: probability of cost-effectiveness across WTP thresholds (CEAC)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce8ee;strokeColor=#00468b;fontSize=12;arcSize=20;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="426" y="995" width="375" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- b8: y=1145 (gap 45); h=75 -->
+        <mxCell id="b8" value="&lt;b&gt;Cost-effectiveness results&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px'&gt;ICERs vs NICE WTP (£25,000–£35,000/QALY)&lt;br&gt;Probability of cost-effectiveness at each WTP threshold (from PSA)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00468b;strokeColor=#0099b4;fontSize=12;arcSize=25;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="173" y="1145" width="480" height="75" as="geometry" />
+        </mxCell>
+
+        <!-- spacer bottom -->
+        <mxCell id="sp_bot" value="" style="fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="233" y="1265" width="5" height="5" as="geometry" />
+        </mxCell>
+
+        <!-- edges: b7a→b8, b7b→b8 -->
+        <mxCell id="ea8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;strokeColor=#00468b;strokeWidth=2;" edge="1" source="b7a" target="b8" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="eb8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.8;entryY=0;entryDx=0;entryDy=0;strokeColor=#00468b;strokeWidth=2;" edge="1" source="b7b" target="b8" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- edges: sa_box→b7a, sa_box→b7b -->
+        <mxCell id="esa_a" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.2;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00468b;strokeWidth=2;" edge="1" source="sa_box" target="b7a" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="esa_b" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.8;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00468b;strokeWidth=2;" edge="1" source="sa_box" target="b7b" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- main column edges -->
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00468b;strokeWidth=2;" edge="1" source="b1" target="b2" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00468b;strokeWidth=2;" edge="1" source="b2" target="b3" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00468b;strokeWidth=2;" edge="1" source="b3" target="b4" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e45" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00468b;strokeWidth=2;" edge="1" source="b4" target="b5" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e5t" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00468b;strokeWidth=2;" edge="1" source="b5" target="btrans" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="etb6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#00468b;strokeWidth=2;" edge="1" source="btrans" target="b6" parent="1"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

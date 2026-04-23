@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mxfile host="Electron" modified="2026-03-06T00:00:00.000Z" agent="Claude Code" version="21.0.0" type="device">
+  <diagram id="patient-flow-cxrqft" name="Patient Flow — CXR+QFT">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        
+        <mxCell id="s1" value="&lt;b&gt;Migrant Arrives&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;100,000 cohort at t = 0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f8;strokeColor=#2878c0;fontSize=12;arcSize=25;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="449" y="52" width="270" height="40" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s2" value="&lt;b&gt;QuantiFERON-TB Gold (QFT)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;IGRA blood test · detects LTBI and active TB&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0e4f4;strokeColor=#4a90d0;fontSize=12;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="449" y="106" width="270" height="40" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="d1" value="&lt;b&gt;QFT positive?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#b8d4ee;strokeColor=#1060a8;fontSize=12;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="499" y="160" width="170" height="58" as="geometry" />
+        </mxCell>
+
+        
+
+        <mxCell id="s3" value="&lt;b&gt;Chest X-ray (CXR)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;TB-pattern abnormality screen&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0e4f4;strokeColor=#4a90d0;fontSize=12;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="190" y="255" width="200" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="d2" value="&lt;b&gt;CXR TB-abnormal?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#b8d4ee;strokeColor=#1060a8;fontSize=11;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="188" y="308" width="204" height="55" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s4" value="&lt;b&gt;Culture Confirmation&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;Xpert MTB/RIF on sputum&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0e4f4;strokeColor=#4a90d0;fontSize=12;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="60" y="390" width="185" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="d3" value="&lt;b&gt;Xpert positive?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#b8d4ee;strokeColor=#1060a8;fontSize=11;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="63" y="445" width="180" height="55" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="m1" value="&lt;b&gt;Active TB (TP)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;TB treatment initiated&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8abae0;strokeColor=#1060a8;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="20" y="530" width="155" height="50" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="m2" value="&lt;b&gt;LTBI (FP for active TB)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;No active TB; LTBI managed&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b8d4ee;strokeColor=#1060a8;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="185" y="530" width="165" height="50" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="m_ltbi" value="&lt;b&gt;LTBI Confirmed&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;QFT+ · CXR clear&lt;br&gt;LTBI treatment offered&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b8d4ee;strokeColor=#1060a8;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="405" y="375" width="185" height="65" as="geometry" />
+        </mxCell>
+
+        
+
+        <mxCell id="s6" value="&lt;b&gt;Discharged&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;QFT negative — no further action&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f8;strokeColor=#4a90d0;fontSize=12;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="740" y="255" width="200" height="40" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="m3" value="&lt;b&gt;True Negative&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;&lt;i&gt;or LTBI missed&lt;br&gt;(QFT sensitivity &amp;lt; 100%)&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f8;strokeColor=#4a90d0;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="695" y="320" width="180" height="65" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s7" value="&lt;b&gt;False Negative (FN)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;Active TB missed&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4a90d0;strokeColor=#0099b4;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="895" y="320" width="170" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="m4" value="&lt;b&gt;Active TB undetected&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;&lt;i&gt;Untreated active TB&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1060a8;strokeColor=#0099b4;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="895" y="390" width="170" height="50" as="geometry" />
+        </mxCell>
+
+        
+
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s1" target="s2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2d1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s2" target="d1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ed1s3" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#00468b;" edge="1" source="d1" target="s3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ed1s6" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#00468b;" edge="1" source="d1" target="s6" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e3d2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s3" target="d2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ed2s4" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#00468b;" edge="1" source="d2" target="s4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ed2ltbi" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#00468b;" edge="1" source="d2" target="m_ltbi" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e4d3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s4" target="d3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ed3m1" value="Positive" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;fontStyle=1;fontSize=10;fontColor=#00468b;" edge="1" source="d3" target="m1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ed3m2" value="Negative" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;fontStyle=1;fontSize=10;fontColor=#00468b;" edge="1" source="d3" target="m2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e6m3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s6" target="m3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6s7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s6" target="s7" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e7m4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s7" target="m4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

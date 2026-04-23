@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mxfile host="Electron" modified="2026-03-09T00:00:00.000Z" agent="Claude Code" version="21.0.0" type="device">
+  <diagram id="patient-flow-cxrultra" name="Patient Flow — CXR+Ultra">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="720" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="s1" value="&lt;b&gt;Migrant Arrives&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;100,000 cohort at t = 0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f8;strokeColor=#2878c0;fontSize=12;arcSize=25;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="449" y="50" width="270" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lbl_parallel" value="Parallel Screening (all migrants)" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontStyle=3;fontColor=#0099b4;" vertex="1" parent="1">
+          <mxGeometry x="290" y="96" width="590" height="14" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s2a" value="&lt;b&gt;Cough / Symptom Screen&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;Cough ≥3 weeks · fever · night sweats&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0e4f4;strokeColor=#4a90d0;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="295" y="112" width="215" height="44" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s2b" value="&lt;b&gt;Chest X-ray (CXR)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;All migrants · active TB pattern + old scarring&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0e4f4;strokeColor=#4a90d0;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="660" y="112" width="215" height="44" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="d1" value="&lt;b&gt;CXR abnormal&lt;br&gt;OR symptoms present?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#b8d4ee;strokeColor=#1060a8;fontSize=11;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="482" y="172" width="205" height="68" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s_neg" value="&lt;b&gt;Discharged&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;Both negative — no further action&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f8;strokeColor=#4a90d0;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="795" y="184" width="200" height="44" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s_tn" value="✔ &lt;b&gt;True Negative (TN)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Uninfected · or LTBI undetected&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f8;strokeColor=#4a90d0;fontSize=10;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="748" y="272" width="185" height="44" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s_fn" value="⚠️ &lt;b&gt;False Negative (FN)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:9px'&gt;Active TB missed · CXR + screen sensitivity &lt;100%&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4a90d0;strokeColor=#0099b4;fontSize=10;arcSize=15;strokeWidth=2;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="953" y="272" width="185" height="44" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="d2" value="&lt;b&gt;CXR suggests&lt;br&gt;active TB?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#b8d4ee;strokeColor=#1060a8;fontSize=11;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="492" y="258" width="185" height="65" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s3" value="&lt;b&gt;Xpert Ultra&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;Molecular confirmation · sputum · higher sensitivity for paucibacillary TB&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d0e4f4;strokeColor=#4a90d0;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="265" y="358" width="215" height="50" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="d3" value="&lt;b&gt;Ultra positive?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#b8d4ee;strokeColor=#1060a8;fontSize=11;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="270" y="422" width="205" height="60" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s4" value="&lt;b&gt;Active TB Confirmed (TP)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8abae0;strokeColor=#1060a8;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="85" y="528" width="185" height="40" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s5" value="&lt;b&gt;TB Treatment&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;2HRZE/4HR (6 months)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4a90d0;strokeColor=#0099b4;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#fff;" vertex="1" parent="1">
+          <mxGeometry x="85" y="582" width="185" height="40" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s6" value="&lt;b&gt;Discharged (TB excluded)&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;Ultra negative — FP for active TB&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f8;strokeColor=#4a90d0;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="438" y="528" width="195" height="44" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="s_ltbi" value="&lt;b&gt;LTBI Assessment&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px'&gt;CXR old-TB scarring pattern · LTBI treatment offered&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b8d4ee;strokeColor=#1060a8;fontSize=11;arcSize=15;strokeWidth=2;fontColor=#00468b;" vertex="1" parent="1">
+          <mxGeometry x="680" y="358" width="215" height="50" as="geometry" />
+        </mxCell>
+
+        
+
+        
+        <mxCell id="e1_2a" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s1" target="s2a" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="517" y="101" />
+              <mxPoint x="402" y="101" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        
+        <mxCell id="e1_2b" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s1" target="s2b" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="651" y="101" />
+              <mxPoint x="767" y="101" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        
+        <mxCell id="e2a_d1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s2a" target="d1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="402" y="163" />
+              <mxPoint x="482" y="163" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        
+        <mxCell id="e2b_d1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s2b" target="d1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="767" y="163" />
+              <mxPoint x="687" y="163" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        
+        <mxCell id="ed1_no" value="No (both negative)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;fontStyle=1;fontSize=10;fontColor=#00468b;" edge="1" source="d1" target="s_neg" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="eneg_tn" value="TN / LTBI" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#1060a8;strokeWidth=2;fontStyle=1;fontSize=9;fontColor=#00468b;" edge="1" source="s_neg" target="s_tn" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="eneg_fn" value="FN" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.7;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#1060a8;strokeWidth=2;fontStyle=1;fontSize=9;fontColor=#00468b;" edge="1" source="s_neg" target="s_fn" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="ed1_yes" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#00468b;" edge="1" source="d1" target="d2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="ed2_yes" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;fontStyle=1;fontSize=11;fontColor=#00468b;" edge="1" source="d2" target="s3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="ed2_no" value="No (old TB / LTBI pattern)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#2070a8;strokeWidth=2;fontStyle=1;fontSize=9;fontColor=#00468b;" edge="1" source="d2" target="s_ltbi" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="e3_d3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s3" target="d3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="ed3_tp" value="Positive (TP)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#1060a8;strokeWidth=2;fontStyle=1;fontSize=9;fontColor=#00468b;" edge="1" source="d3" target="s4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="e45" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2070a8;strokeWidth=2;" edge="1" source="s4" target="s5" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        
+        <mxCell id="ed3_fp" value="Negative (FP)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#1060a8;strokeWidth=2;fontStyle=1;fontSize=9;fontColor=#00468b;" edge="1" source="d3" target="s6" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="535" y="452" />
+              <mxPoint x="535" y="528" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
